@@ -103,6 +103,10 @@
         </div>
     </section>
 
+    <section class="flex justify-center items-center hidden">
+        <span class="loading loading-bars loading-xl"></span>
+    </section>
+
     <!-- word container-->
     <section id="word-container" class="bg-gray-100 p-10 my-10 w-11/12 mx-auto grid grid-cols-3 gap-5 ">
 
@@ -116,14 +120,16 @@
     </section>
     <!-- Open the modal using ID.showModal() method -->
     <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-            <h3 class="text-lg font-bold">Hello!</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div id="details-container" class="space-y-5">
+               
+            </div>
+
             <div class="modal-action">
                 <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn">Close</button>
+                    <button class="btn btn-outline btn-primary ">Complete Learning</button>
                 </form>
             </div>
         </div>
